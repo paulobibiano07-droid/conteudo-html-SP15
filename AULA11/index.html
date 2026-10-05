@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Conteúdo Aula11 - HTML</title>
+
+    <style>
+        .lista-horinzontal {
+            background-color: #333333;
+            list-style-type: none;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+            
+           
+         } 
+
+         .lista-horinzontal li {
+          float: left;  
+        } 
+
+
+        li a{
+            color: aquamarine;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 20px; 
+            display: block;
+        }
+
+        a:hover{
+            background-color:blue;
+            color: red;
+            transition: .2s;
+        }
+
+        a:active{
+            background-color: #fff;
+            color: purple;
+            transition: .2s;
+        }
+    </style>
+  </head>
+  <body>
+
+    <h1>Listas Não Ordenadas</h1>
+
+    <ul>
+      <li>Item</li>
+      <li>Item</li>
+      <li>Item</li>
+      <li>Item</li>
+      <li>Item</li>
+    </ul>
+
+    <hr>
+
+    <h2>Marcadores de Lista Não Ordenada</h2>
+
+    <h3>list-style-type: disc;</h3>
+
+    <ul style="list-style-type: disc;">
+      <li>Item</li>
+      <li>Item</li>
+      <li>Item</li>
+      <li>Item</li>
+      <li>Item</li>
+    </ul>
+
+    <br>
+
+    <hr>
+
+        <h3>list-style-type: circle;</h3>
+
+    <ul style="list-style-type: circle;">
+        
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+        
+    </ul>
+
+
+    <hr>
+
+
+        <h3>list-style-type: square;</h3>
+
+
+        <ul style="list-style-type: square;">
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+        </ul>
+
+
+        <br>
+
+        <hr>
+
+            <h3>List-style-type: none;</h3>
+
+        <ul style="list-style: none;">
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+        </ul>    
+
+
+
+    <h2>Listas Alinhadas </h2>
+
+        <h3>Listas dentro de lista</h3>
+
+        <ul>
+            <li>item</li>
+            <li>item</li>
+           <ul>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            </ul>
+            <li>item</li>
+            <li>item</li>
+        </ul>
+
+
+    <h2>Lista Horinzontal</h2>
+
+        <ul class="lista-horinzontal">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contatos">Contatos</a></li>
+            <li><a href="#blog">Blog</a></li>
+            
+        </ul>
+
+    
+
+  </body>
+</html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Conteudo Aula 12 - HTML</title>
+        <link rel="shortcut icon" href="/AULA10.0/img/icone.png" type="image/x-icon">
+
+        <style>
+
+            /* Alinahndo divs com float */
+
+            .div-float{
+                width: 100%;
+                overflow: auto;
+                
+            }
+
+            .div-float div{
+                width: 25%;
+                float: left;
+            }
+
+            /* Alinhando divs com inline-block */
+
+            .div-inline-block{
+                width: 100%;
+            }
+
+            .div-inline-block div{
+                display: inline-block;
+            }
+
+            /* Alinahndo divs com flex */
+
+            .div-flex{
+                display:flex;
+                gap:5px;
+            }
+            .div-flex div{
+                width: 50%;
+            }
+
+            /* Alinhando divs com gride */
+
+            .div-gride{
+                display: grid;
+                grid-template-columns: 27% 27% 27% 27%;
+                gap: 200px;
+                
+            }
+            .div-gride div{
+                width: 200px;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <h1>DIV em HTML</h1>
+
+            <h2>Div como Contêiner</h2>
+
+                <div style="background-color:red;">
+                    <h2>Isso é um h2</h2>
+                    <p>isso é um <span style="color: blue; border-color: blue;">Paragrafo</span></p>
+                    <p>isso é um <span>Paragrafo</span></p>
+                    <p>isso é um <span>Paragrafo</span></p>
+                </div>
+
+
+            <hr>
+
+            <h2>Centralizando div</h2>
+
+            <div style="
+            background-color: blueviolet;
+            width: 250px;
+            margin: auto;">
+
+
+                <h2>Isso é um h2</h2>
+                <p>isso é um parágrafo</p>
+                <p>isso é um parágrafo</p>
+                <p>isso é um parágrafo</p>
+            </div>
+
+
+            <hr>
+
+
+            <h2>Vários divs no documento</h2>
+
+
+
+               <div style="background-color: blueviolet;">
+                <h3>isso é um h3</h3>
+                <p>isso é um paragrafo</p>
+                <p>isso é um paragrafo</p>
+               </div> 
+
+               <br>
+
+               <div  style="background-color: yellowgreen;">
+                <h3>isso é um h3</h3>
+                <p>isso é um paragrafo</p>
+                <p>isso é um paragrafo</p>
+               </div>
+
+               <br>
+
+               <div style="background-color: brown;">
+                <h3>isso é um h3</h3>
+                <p>isso é um paragrafo</p>
+                <p>isso é um paragrafo</p>
+               </div>
+
+               <br>
+
+               <div style="background-color: blanchedalmond;color:red;">
+                <h3>isso é um h3</h3>
+                <p>isso é um paragrafo</p>
+                <p>isso é um paragrafo</p>
+               </div>
+
+
+        <hr>
+
+        <h2 >Alinhando divs lado a lado</h2>
+
+               <h3>Alinhando com o float</h3>
+
+
+               <div class="div-float">
+
+                  <div style="background-color: blueviolet;">
+                <h3>isso é um h3</h3>
+                <p>isso é um paragrafo</p>
+                <p>isso é um paragrafo</p>
+               </div> 
+
+               
+
+               <div  style="background-color: yellowgreen;">
+                <h3>isso é um h3</h3>
+                <p>isso é um paragrafo</p>
+                <p>isso é um paragrafo</p>
+               </div>
+
+               
+
+               <div style="background-color: brown;">
+                <h3>isso é um h3</h3>
+                <p>isso é um paragrafo</p>
+                <p>isso é um paragrafo</p>
+               </div>
+
+              
+
+               <div style="background-color: blanchedalmond;color:red;">
+                <h3>isso é um h3</h3>
+                <p>isso é um paragrafo</p>
+                <p>isso é um paragrafo</p>
+               </div>
+
+
+
+
+               </div>
+
+
+        <br>
+        
+               <h3>Alinhando os divs em inline-block</h3>
+
+                <div class="div-inline-block">
+
+                    
+               <div style="background-color: blueviolet;">
+                <h3>isso é um h3</h3>
+                <p>isso é um paragrafo</p>
+                <p>isso é um paragrafo</p>
+               </div> 
+
+               
+
+               <div  style="background-color: yellowgreen;">
+                <h3>isso é um h3</h3>
+                <p>isso é um paragrafo</p>
+                <p>isso é um paragrafo</p>
+               </div>
+
+               
+
+               <div style="background-color: brown;">
+                <h3>isso é um h3</h3>
+                <p>isso é um paragrafo</p>
+                <p>isso é um paragrafo</p>
+               </div>
+
+               
+
+               <div style="background-color: blanchedalmond;color:red;">
+                <h3>isso é um h3</h3>
+                <p>isso é um paragrafo</p>
+                <p>isso é um paragrafo</p>
+               </div>
+                    
+
+
+
+
+
+                </div>
+             
+            <br>
+
+
+            <h3>Alinhando divs com flex</h3>
+
+
+                <div class="div-flex">
+
+                    <div style="background-color: blueviolet;">
+                <h3>isso é um h3</h3>
+                <p>isso é um paragrafo</p>
+                <p>isso é um paragrafo</p>
+               </div> 
+
+               
+
+               <div  style="background-color: yellowgreen;">
+                <h3>isso é um h3</h3>
+                <p>isso é um paragrafo</p>
+                <p>isso é um paragrafo</p>
+               </div>
+
+               
+
+               <div style="background-color: brown;">
+                <h3>isso é um h3</h3>
+                <p>isso é um paragrafo</p>
+                <p>isso é um paragrafo</p>
+               </div>
+
+               
+
+               <div style="background-color: blanchedalmond;color:red;">
+                <h3>isso é um h3</h3>
+                <p>isso é um paragrafo</p>
+                <p>isso é um paragrafo</p>
+               </div>
+                    
+                </div>
+
+
+            <br>
+
+
+            <h3>Alinhando divs com gride</h3>
+
+                <div class="div-gride">
+
+                     <div style="background-color: blueviolet;">
+                <h3>isso é um h3</h3>
+                <p>isso é um paragrafo</p>
+                <p>isso é um paragrafo</p>
+               </div> 
+
+               
+
+               <div  style="background-color: yellowgreen;">
+                <h3>isso é um h3</h3>
+                <p>isso é um paragrafo</p>
+                <p>isso é um paragrafo</p>
+               </div>
+
+               
+
+               <div style="background-color: brown;">
+                <h3>isso é um h3</h3>
+                <p>isso é um paragrafo</p>
+                <p>isso é um paragrafo</p>
+               </div>
+
+               
+
+               <div style="background-color: blanchedalmond;color:red;">
+                <h3>isso é um h3</h3>
+                <p>isso é um paragrafo</p>
+                <p>isso é um paragrafo</p>
+               </div>
+                     
+
+                </div>
+
+
+
+    </body>
+</html>

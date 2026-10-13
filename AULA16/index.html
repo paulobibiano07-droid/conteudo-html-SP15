@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+        .esq{
+            background-color: aqua;
+            padding: 20px;
+            width: 20%;
+            float: left;
+
+        }
+
+
+        .meio {
+            background-color: aquamarine;
+            padding: 20px;
+            width: 60%;
+            float: left;
+
+        }
+
+        .dir{
+            background-color: brown;
+            float: left;
+            padding: 20px;
+            width:20%;
+
+        }
+
+        @media screen and(max-width:800px) {
+          .esq, .meio, .dir{
+            width: 100%;
+          }  
+            
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h1>Responsividade no HTML</h1>
+
+        <h3>Imagem responsivas com width:100%</h3>
+
+            <img src="../AULA15-IMG/Taças Cristalizados (3).png" style="width: 100%;">
+
+      <hr>
+      
+        <h3>Imagem responsiva com max-width: 100%</h3>
+
+         <img src="../AULA15-IMG/Taças Cristalizados (3).png" style="max-width: 100%;">
+
+
+
+
+
+    <hr>
+
+
+
+        <h3 style="font-size: 5vw;">Texto responsivo com a unidade de medida vw</h3>
+
+            <p style="font-size: 3vw;">Somente a dor coletiva gera união</p>
+
+
+    <hr>
+
+        <h3>Responsividade com media query</h3>
+
+        <div class="esq">
+            <p>Esquerda</p>
+        </div>
+        <div class="meio">
+            <p>Centro</p>
+        </div>
+        <div class="dir">
+            <p>Direita</p>
+        </div>
+
+
+</body>
+</html>
